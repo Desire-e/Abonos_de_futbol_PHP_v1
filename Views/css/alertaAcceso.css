@@ -1,0 +1,16 @@
+body {
+  justify-content: center;
+}
+
+.btn {
+  max-width: 100px;
+}
+
+.container-alerta{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  padding:30px;
+}

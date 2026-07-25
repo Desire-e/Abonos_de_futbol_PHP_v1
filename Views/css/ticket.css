@@ -1,0 +1,15 @@
+body {
+  background: repeating-linear-gradient(
+    to right,
+    rgb(214, 147, 147) 0,
+    rgb(214, 147, 147) 80px,
+    white 80px,
+    white 160px
+  );
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

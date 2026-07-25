@@ -1,0 +1,79 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY BASE */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 129px;
+  width: 100%;
+  background-color: #aacee4;
+  top:0;
+  z-index: 10; /* Asegura que el header esté por encima del sombreado */
+}
+
+header img {
+  max-width: 120px;
+  width: 100%;
+}
+
+/* CONTENEDOR */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  margin: 30px;
+
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+
+/* BOTONES */
+.btn,
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self:center;
+  max-width: 250px;
+  width: 100%;
+  padding: 6px;
+
+  background-color: #ccc;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.btn.small {
+  max-width: 100px;
+}
+
+/* ERRORES */
+.error {
+  color: red;
+  font-size: 0.9em;
+}

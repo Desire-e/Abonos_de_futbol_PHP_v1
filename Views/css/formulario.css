@@ -1,0 +1,27 @@
+body {
+  background: repeating-linear-gradient(
+    to right,
+    rgb(214, 147, 147) 0,
+    rgb(214, 147, 147) 80px,
+    white 80px,
+    white 160px
+  );
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.campo input,
+select {
+  width: 100%;
+}
+
+.terminos {
+  display: flex;
+  gap: 10px;
+}
