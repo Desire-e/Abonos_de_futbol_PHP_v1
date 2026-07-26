@@ -107,6 +107,12 @@ El script `uda.sql` crea dos usuarios de ejemplo (el usuario `uda` tiene rol de 
 **usuario normal**: antonio40 **contraseña**: contrasena
 **usuario administrador**: uda **contraseña**: 1234
  
+ 
+## Autor
+
+**Desire-e** — [GitHub](https://github.com/Desire-e)
+
+ 
 ## Licencia
  
 Este proyecto se comparte con fines educativos y de portfolio.
