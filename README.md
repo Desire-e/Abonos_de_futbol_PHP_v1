@@ -11,6 +11,7 @@ Este proyecto forma parte de una serie de tres versiones de la misma aplicación
 
 Desarrollado como práctica académica para trabajar el patrón MVC, el enrutamiento centralizado, el autoload con namespaces y el uso del patrón Singleton en PHP nativo, sin apoyarse en ningún framework.
 
+---
 ## Funcionalidades
  
 - **Enrutador central** (`index.php`): único punto de entrada de la aplicación. Recibe `controller` y `action` por GET, valida que el método exista en el controlador correspondiente y delega la petición — evita el acceso directo a modelos o vistas.
@@ -23,6 +24,7 @@ Desarrollado como práctica académica para trabajar el patrón MVC, el enrutami
   - Ticket final con los datos del abono comprado.
 - **Listado de abonos** (solo administrador): tabla con todos los abonos registrados.
 
+---
 ## Arquitectura
  
 - **Enrutador** (`index.php`): interpreta la URL (`?controller=...&action=...`) y llama al método correspondiente del controlador.
@@ -31,7 +33,9 @@ Desarrollado como práctica académica para trabajar el patrón MVC, el enrutami
 - **Vistas** (`Views/`): plantillas PHP con el HTML de cada página, cargadas mediante buffering de salida (`ob_start()` / `ob_get_clean()`) e insertadas dentro de una plantilla común (`Views/plantillas/main.php`).
 - **Autoload** (`Autoload.php`): registra un autoloader con `spl_autoload_register()` que traduce el namespace de cada clase (`Controllers\`, `Models\`, `Database\`) a su ruta de archivo, evitando `require_once` manuales.
 - **Conexión a BD** (`Database/ConexionBD.php`): implementa el patrón **Singleton**, garantizando una única instancia de conexión PDO reutilizada por todos los modelos.
-## 🛠️ Tecnologías
+
+---
+## Tecnologías
  
 - PHP (nativo, con namespaces y autoload — sin framework)
 - MySQL / MariaDB
@@ -39,6 +43,7 @@ Desarrollado como práctica académica para trabajar el patrón MVC, el enrutami
 - HTML5 + CSS3
 - Sesiones y cookies de PHP
 
+---
 ## Estructura del proyecto
  
 ```
@@ -68,7 +73,8 @@ Desarrollado como práctica académica para trabajar el patrón MVC, el enrutami
     ├── css/
     └── img/
 ```
- 
+
+---
 ## Instalación
  
 ### Requisitos
@@ -99,7 +105,8 @@ Desarrollado como práctica académica para trabajar el patrón MVC, el enrutami
 ```
    http://localhost/abonos-futbol-mvc/index.php?controller=abonos&action=compra
 ```
- 
+
+---
 ## Usuarios de prueba
  
 El script `uda.sql` crea dos usuarios de ejemplo (el usuario `uda` tiene rol de administrador; el resto, rol normal):
@@ -107,12 +114,7 @@ El script `uda.sql` crea dos usuarios de ejemplo (el usuario `uda` tiene rol de 
 **usuario normal**: antonio40 **contraseña**: contrasena
 **usuario administrador**: uda **contraseña**: 1234
  
- 
+--- 
 ## Autor
 
 **Desire-e** — [GitHub](https://github.com/Desire-e)
-
- 
-## Licencia
- 
-Este proyecto se comparte con fines educativos y de portfolio.
